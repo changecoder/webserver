@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ChangeCoder - {{title}}</title>
+    <style>
+    html, body, body>div {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+    }
+    body>div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    h1, h2, h3 {
+        margin: 0 15px;
+        text-align: center;
+        font-family: PingFang SC, Helvetica Neue, Verdana, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+    }
+    h1 {
+        letter-spacing: 10px;
+    }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>{{ status }}</h1>
+        <h2>服务器报错</h2>
+        <h3>Internal server error</h3>
+    </div>
+</body>
+</html>
