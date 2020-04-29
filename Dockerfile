@@ -1,6 +1,6 @@
 FROM openresty/openresty:centos
 
-RUN mkdir -p /usr/src/web/conf/cert
+RUN mkdir -p /usr/src/webserver/conf/cert
 
 RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
@@ -10,4 +10,4 @@ COPY . /usr/src/webserver
 
 EXPOSE 443 80
 
-CMD ["nginx", "-p", "/usr/src/web/", "-c", "conf/nginx.conf", "-g", "daemon off;"]
+CMD ["nginx", "-p", "/usr/src/webserver/", "-c", "conf/nginx.conf", "-g", "daemon off;"]
